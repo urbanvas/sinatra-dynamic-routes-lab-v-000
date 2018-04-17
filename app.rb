@@ -38,9 +38,10 @@ class App < Sinatra::Base
       num = num1 * num2
     elsif params[:operation] == 'divide'
       num = num1 / num2
-
-
-
+    else
+      nil
+    end
+    num.to_s
   end
 
 end
