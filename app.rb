@@ -19,7 +19,7 @@ class App < Sinatra::Base
     phrase = params[:phrase]
     var = ""
     num.times do
-      var << "#{phrase}\n"
+      var << phrase
     end
     var
     # binding.pry
