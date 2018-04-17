@@ -27,4 +27,13 @@ class App < Sinatra::Base
      "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
 
+  get '/:operation/:number1/:number2' do
+    num
+    if params[:operation] == 'add'
+      num = :number1 + :number2
+    elsif params[:operation] == 'subtract'
+      num = 
+      
+  end
+
 end
